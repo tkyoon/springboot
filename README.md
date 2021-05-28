@@ -1,20 +1,18 @@
 # Springboot Hello world
 
-
 터미널에서
 
 git clone https://github.com/tkyoon/springboot.git
 
 cd springboot
 
-
 /gradle.properties 파일에서 java.home 설정 (\는 안됨)
 
-org.gradle.java.home=C:/Dev/java/jdk-15 
-
+org.gradle.java.home=C:/Dev/java/jdk-15
 
 서버 실행
 .\gradlew bootRun
 
+소스 hot deploy를 적용하려면 Spring Boot Dashborad에서 debugger로 실행
 
 http://localhost:8080 접속
