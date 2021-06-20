@@ -21,8 +21,12 @@
 
     .\gradlew bootRun
 
-    서버를 한번 실행해야 탐색기에서 Spring Boot Dashborad가 생성되는 듯...
+    Spring Boot Dashborad에 컨테이너가 올라 오려면 시간이 좀 걸림
 
 * 소스 hot deploy를 적용하려면 Spring Boot Dashborad에서 debugger로 실행
 
 * http://localhost:8080 접속
+
+
+* Entity 생성할 경우 toString() 설정 Object형 log를 쌓기 위해
+[참조] https://its-easy.tistory.com/19
