@@ -59,16 +59,11 @@ public class HelloController {
 
     @RequestMapping(value = "/post", method = RequestMethod.POST)
     public String post(Posts post) {
-        // Posts post = new Posts("title", "content", "author");
-        
-       post = postsRepository.save(Posts.builder()
-        .title("제목2")
-        .content("내용2")
-        .author("b088081@gmail.com")
-        .build());
+//         Posts post = new Posts("title", "content", "author");
+        post = postsRepository.save(Posts.builder().title("제목2").content("내용").author("pro@dreamlabs.co.kr").build());
 
-        // log.trace("post : {}", post);
-        // postsRepository.save(post);
+         log.debug("post22222: {}", post);
+         postsRepository.save(post);
 
         List<Posts> postList = postsRepository.findAll();
         log.debug("postList : <{}>", postList);
